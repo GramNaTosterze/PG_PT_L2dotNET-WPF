@@ -1,0 +1,14 @@
+﻿<Window x:Class="prLab2.AboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prLab2"
+        mc:Ignorable="d"
+        Title="AboutDialog" Height="142" Width="263">
+    <Grid >
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center">programik na laby 2 .NET</TextBlock>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Krzysztof Napiórkowski</TextBlock>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="Close_Click" Width="34">Ok</Button>
+    </Grid>
+</Window>

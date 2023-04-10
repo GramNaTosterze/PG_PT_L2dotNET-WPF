@@ -1,0 +1,26 @@
+﻿<Window x:Class="prLab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prLab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <ToolBarTray Background="White" HorizontalAlignment="Left" Margin="0,0,0,10" >
+            <ToolBar>File
+                <MenuItem ToolBar.OverflowMode="Always" Click="OpenDir_Click" Header="Open" />
+                <MenuItem ToolBar.OverflowMode="Always" Click="CloseDown_Click" Header="Exit"/>
+                <MenuItem ToolBar.OverflowMode="Always" Click="About_Click" Header="About" />
+            </ToolBar>
+        </ToolBarTray>
+        <TreeView x:Name="dirTreeView" Margin="50,25,400,42" SelectedItemChanged="PrintRAHS"/>
+        <StatusBar VerticalAlignment="Bottom" Margin="50,0,400,5" Height="32">
+            <TextBlock x:Name="rashBlock"/>
+        </StatusBar>
+        <ScrollViewer Margin="405,0,0,0" x:Name="scrollViewer"/>
+
+
+    </Grid>
+
+</Window>
